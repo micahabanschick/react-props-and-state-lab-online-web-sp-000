@@ -5,7 +5,7 @@ class Pet extends React.Component {
   handleClick = () =>{
     this.props.onAdoptPet(this.props.pet.id)
   }
-  
+
   render() {
     return (
       <div className="card">
