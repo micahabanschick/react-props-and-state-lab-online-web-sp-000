@@ -14,7 +14,7 @@ class Filters extends React.Component {
   handleClick = () => {
     this.props.onFindPetsClick()
   }
-  
+
   render() {
     return (
       <div className="ui form">
