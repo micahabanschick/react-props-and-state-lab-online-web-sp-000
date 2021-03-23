@@ -1,6 +1,20 @@
 import React from 'react'
 
 class Filters extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+      select: ""
+    }
+  }
+  handleChange = (event) => {
+    this.props.onChangeType(event)
+  }
+
+  handleClick = () => {
+    this.props.onFindPetsClick()
+  }
+  
   render() {
     return (
       <div className="ui form">
