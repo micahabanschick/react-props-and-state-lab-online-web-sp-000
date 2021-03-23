@@ -1,13 +1,20 @@
 import React from 'react'
 
 class Pet extends React.Component {
+
+  handleClick = () =>{
+    this.props.onAdoptPet(this.props.pet.id)
+  }
+  
   render() {
     return (
       <div className="card">
         <div className="content">
           <a className="header">
-            {/*'♀' OR '♂' */}
-            PET NAME
+            // {/*'♀' OR '♂' */}
+            // PET NAME
+            {this.props.pet.gender === 'male' ? '♂' : '♀'}
+            PET NAME: {this.props.pet.name}
           </a>
           <div className="meta">
             <span className="date">PET TYPE</span>
